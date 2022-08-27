@@ -1,0 +1,120 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+body{  
+    background:#c850c0 ;
+}
+.form{
+    background-color: #ccc;
+    max-width: 350px;
+    width: 70%;
+    padding: 2em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+
+}
+
+h1{
+    text-align: center;
+    color: #5f7cba;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifZ;
+    padding: 1em;
+}
+
+
+.password, .email {
+    width:100%;
+    height: 45px;
+    border:1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+  
+}
+
+.submit{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #5f7cba;
+    color: #ccc;
+    border: 0;
+    border-radius: 20px;
+    background:linear-gradient(43deg,#4158d0 0%,#c850c0 46%,#ffcc70 100%);
+    font-size: large;
+    margin-bottom: 6%;
+    margin-top: 2%;
+    transition: 1s;
+   
+}
+
+
+.esqueceu {
+    margin-left: 34%;
+    color: #c850c0;
+}
+
+.fundo {
+    width: 100%;
+    height: 100%;
+}
+
+.social-icones {
+    padding: 0; 
+    margin: 0;  
+    list-style: none;
+    text-align:center;
+    
+}
+
+.social-icones li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.social-icones i {
+    color: white;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out ;
+
+}
+
+.social-icones a {
+    display: inline-block;
+}
+
+.social-icones a::before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: block;
+    background:linear-gradient(43deg,#4158d0 0%,#c850c0 46%,#ffcc70 100%);
+    transition: all 265ms ease-out;
+
+}
+
+.social-icones a:hover::before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icones :hover i {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    color: #fff;
+    background: linear-gradient(43deg,#4158d0 0%,#c850c0 46%,#ffcc70 100%);
+    transition: all 265ms ease-out;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
